@@ -1,0 +1,230 @@
+:root {
+  --color1: #ef9910;
+  --color2: #c25c03;
+  --text-color: #2b191f;
+  --background-color: #fdeedc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62%;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: 2rem;
+}
+header#header {
+  background-color: var(--background-color);
+  padding: 10px 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+img#header-img {
+  width: 75px;
+}
+p#guitar-name {
+  display: inline;
+  font-size: 3rem;
+}
+ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:visited {
+  color: var(--text-color);
+}
+section#subscription {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 150px;
+}
+form#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+input#email {
+  width: 275px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+input#submit {
+  border: none;
+  padding: 10px;
+  width: 190px;
+  background-color: var(--color1);
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+input#submit:hover {
+  background-color: var(--color2);
+  transition: 0.5s;
+}
+iframe {
+  border-radius: 10px;
+}
+div#container {
+  padding: 25px 125px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: minmax(50px, 100px) 1fr;
+  align-items: center;
+  margin-bottom: 50px;
+}
+i {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 2.7rem;
+}
+section#how-it-works {
+  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+  max-width: 1030px;
+  margin: auto auto 100px;
+}
+div.product {
+  border: 2px solid var(--text-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  border-radius: 7px;
+}
+.name {
+  width: 100%;
+  background-color: var(--color1);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px 5px 0 0;
+}
+h2#price {
+  margin-bottom: 15px;
+}
+.product-desc {
+  padding: 15px;
+}
+button.btn {
+  margin-top: auto;
+  border: none;
+  padding: 12px 30%;
+  background-color: var(--color2);
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button.btn:hover {
+  background-color: var(--color1);
+  transition: 0.5s;
+}
+footer {
+  padding: 15px 25px;
+  background-color: var(--color1);
+}
+ul#footer-ul {
+  margin: 0 0 0 auto;
+  font-weight: bold;
+  width: 235px;
+}
+#footer-ul li a:hover {
+  color: var(--color2);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+p.copyrights {
+  margin-top: 10px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+p.info {
+  text-align: center;
+}
+.info a {
+  font-weight: bold;
+}
+.info a:hover {
+  color: var(--color2);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+@media (max-width: 970px) {
+  header#header {
+    padding: 10px 20px;
+  }
+  section#subscription {
+    padding: 0 30px;
+    text-align: center;
+  }
+  div#container {
+    padding: 25px 30px;
+  }
+  section#pricing {
+    display: grid;
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+  }
+  ul#nav-ul {
+    margin-left: 15px;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  iframe {
+    max-width: 475px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  p.info {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  .description p {
+    font-size: 1.8rem;
+  }
+}
